@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Rogue Party: Roguelite JRPG Based on Pathfinder 2e (PF2e) | Free Browser Game</title>
+  <meta name="description" content="Rogue Party is a free browser roguelite JRPG based on PF2e (Pathfinder 2e). Build a party of four heroes, battle on a turn-based grid, disarm traps and climb ten floors. No download: play on your phone or computer, like the Flash games of old.">
+  <meta name="keywords" content="Pathfinder, Pathfinder 2e, PF2e, Pathfinder Second Edition, Pathfinder game, PF2e game, based on PF2e, JRPG, roguelite, roguelike, browser game, free online game, flash game, turn-based RPG, tactics RPG, party RPG, pixel art RPG, d20, tabletop RPG game, HTML5 game">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rogueparty.app/">
+  <!-- share cards (Facebook, Discord, Reddit, X...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Rogue Party">
+  <meta property="og:title" content="Rogue Party: Roguelite JRPG Based on Pathfinder 2e">
+  <meta property="og:description" content="A free browser roguelite JRPG based on PF2e: four heroes, turn-based grid battles, traps and ten floors to clear. No download.">
+  <meta property="og:url" content="https://rogueparty.app/">
+  <meta property="og:image" content="https://rogueparty.app/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Rogue Party: four pixel-art heroes facing a red dragon, a red d20 marked RP and the title">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rogue Party: Roguelite JRPG Based on Pathfinder 2e">
+  <meta name="twitter:description" content="A free browser roguelite JRPG based on PF2e. No download.">
+  <meta name="twitter:image" content="https://rogueparty.app/og-image.jpg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["VideoGame", "WebApplication"],
+    "name": "Rogue Party",
+    "url": "https://rogueparty.app/",
+    "image": "https://rogueparty.app/og-image.jpg",
+    "description": "A free browser roguelite JRPG based on PF2e (Pathfinder 2e): build a party of four heroes, fight turn-based battles on a grid, disarm traps and pass skill challenges across ten floors.",
+    "genre": ["Roguelite", "JRPG", "Role-playing", "Turn-based tactics"],
+    "keywords": "Pathfinder, Pathfinder 2e, PF2e, based on PF2e, JRPG, roguelite, roguelike, browser game, flash game, turn-based RPG",
+    "gamePlatform": ["Web browser", "Mobile web", "PC"],
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Any (runs in a web browser)",
+    "playMode": "SinglePlayer",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css?v=0cad19f">
+  <!-- Rewarded ads (Hero Point, Don't give up): your AdSense publisher id ("ca-pub-..."). Empty: a stand-in ad plays.
+       rp-ad-test "on" asks Google for test ads; set it to "off" once the game is live. -->
+  <meta name="rp-ad-client" content="ca-pub-4132254223510529">
+  <meta name="rp-ad-test" content="off">
+  <!-- "reward": when Google has no ad to show (site not approved yet, ad blocker), the reward is given anyway.
+       "none": no ad, no reward. An ad closed before the end never gives the reward. -->
+  <meta name="rp-ad-fallback" content="reward">
+  <meta name="google-adsense-account" content="ca-pub-4132254223510529">
+</head>
+<body>
+  <noscript>
+    <h1>Rogue Party: a roguelite JRPG based on PF2e</h1>
+    <p>Rogue Party is a free browser game based on PF2e. It needs JavaScript to run.
+       <a href="about.html">Read about the game</a>.</p>
+  </noscript>
+  <div id="app"></div>
+  <div id="loading">
+    <div class="title">Rogue Party</div>
+    <div class="note">A roguelite JRPG based on PF2e</div>
+    <div class="track"><div id="bar"></div></div>
+    <div class="note">Loading&hellip;</div>
+  </div>
+  <script src="rp.js?v=0cad19f"></script>
+  <script src="teavm/classes.js?v=0cad19f"></script>
+  <script>RP.boot();</script>
+</body>
+</html>
